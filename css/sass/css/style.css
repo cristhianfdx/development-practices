@@ -1,0 +1,23 @@
+.mensaje {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+header {
+  margin-bottom: 1.5em; }
+  header nav a {
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+    background: #0074d9;
+    display: inline-block;
+    margin-right: 1em;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px; }
+    header nav a:hover {
+      background: #ff851b;
+      text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

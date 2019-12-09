@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-5 mx-auto p-4">
+        <div class="card card-body">
+            <form action="/edit/{{contact.0}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="fullname" placeholder="Fullname" autofocus class="form-control"
+                        value="{{contact.1}}">
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone" class="form-control" value="{{contact.2}}">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" class="form-control" value="{{contact.3}}">
+                </div>
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-block btn-info">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

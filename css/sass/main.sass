@@ -1,0 +1,21 @@
+@import _variables
+@import _mixins
+@import _extends
+
+header
+    margin-bottom: 1.5em
+    nav
+        a
+            padding: 1em
+            color: #fff
+            text-decoration: none
+            background: $color-blue
+            display: inline-block
+            margin-right: 1em
+            +mixin-border(15px)
+            &:hover
+                background: #ff851b
+                text-decoration: none
+
+.mensaje
+    @extend %mensaje

@@ -1,0 +1,26 @@
+
+.tabla{
+    margin: auto;
+}
+
+th{
+    background-color: brown;
+    color: aliceblue;
+}
+
+table, th, tr, td{
+    border: 1px black solid;
+}
+
+form{
+    margin-top: 30px;    
+    width: 360px;
+}
+
+.input-form{
+    margin: auto
+}
+
+.boton{
+    text-align: center
+}

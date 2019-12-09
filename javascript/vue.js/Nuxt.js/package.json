@@ -1,0 +1,16 @@
+{
+  "name": "nuxt-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nuxt": "^2.3.4",
+    "nuxt-i18n": "^5.4.4"
+  }
+}

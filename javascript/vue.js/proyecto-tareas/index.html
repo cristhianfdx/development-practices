@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <div id="taskApp" class="col-sm-8 col-sm-offset-2">
+            <h1>{{nameApp}}</h1>
+
+            <form v-on:submit="agregarTarea">
+                <input type="text" v-model="tareas.titulo" class="form-control">
+                <input type="submit" value="Agregar" class="btn btn-primary btn-block">
+            </form>
+            <br><br>
+            <table class="table">
+                <thead>
+                    <th class="">Realizada!</th>
+                    <th>Tarea</th>
+                    <th>Eliminar</th>
+                </thead>
+                <tbody>
+                    <tr v-for="t in tareas">
+                        <td>
+                            <input type="checkbox" v-model="t.hecho">
+                        </td>
+                        <td :class="{tareaRealizada: t.hecho}">{{t.titulo}}</td>
+                        <td><button v-on:click="eliminarTarea(t)" class="btn btn-danger">ELIMINAR</button></td>                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

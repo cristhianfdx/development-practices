@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="Primeros pasos para aprender Javascript"/>
+    <title>Fundamentos JS</title>
+</head>
+<body>
+    <h2>Mostrar Fecha</h2>
+    <script>
+       /*Objetos principales JS
+       1. document
+       2. window
+       3. navigator
+       */
+       
+       document.write("<h1>"+new Date()+"</h1>"); 
+
+    </script>
+    <hr/>
+
+    <h2>Reemplazar contenido</h2>
+    
+    <p id="p-fecha">P&aacute;rrafo</p>
+    <script>
+        document.getElementById("p-fecha").innerHTML= new Date();
+    </script>
+    <hr/>
+
+    <h2>Reemplazar contenido con evento</h2>
+
+    <p id="p-fecha-2">Otro p&aacute;rrafo</p>
+    <input type="button" value="CAMBIAR" id="btn">
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            document.getElementById("p-fecha-2").innerHTML = new Date();
+        }, false)
+    </script>
+    <hr/>
+
+    <h2>Variables</h2>
+    <script>
+        var x = 5;
+        document.write(x*5);
+    </script>
+    <hr/>
+
+    <h2>Excepciones</h2>
+    <script>
+        function mostrarError(){
+            try {
+                alert("Mensajes");
+            } catch (error) {
+                alert("Error" +" "+ error.message);
+            }
+        }        
+    </script>
+    <hr/>
+    <h2>Objeto Navigator</h2>
+
+    <script>
+        document.write("Nombre: "+ navigator.appName + "<br/>");
+        document.write("Versión:" + navigator.appVersion + "<br/>");              
+    </script>
+
+</body>
+</html>

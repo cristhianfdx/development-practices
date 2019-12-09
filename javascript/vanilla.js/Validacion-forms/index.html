@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validacion Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+        <form action="" id="frm-contacto" name="frm_contacto" method="GET" enctype="application/x-www-form-urlencoded">
+
+            <fieldset>
+
+                <Legend>CONTACTO</Legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="txt_nombre" id="nombre">
+                <br /> <br />
+                <label for="edad">Edad:</label>
+                <input type="text" name="txt_edad" id="edad">
+                <br /> <br />
+                <label for="email">Email:</label>
+                <input type="text" name="txt_email" id="email">
+                <br /> <br />
+                <label for="genero">Género:</label>
+                <label for="M">
+                    <input type="radio" name="rb_genero" id="M" value="M">
+                    Masculino
+                </label>               
+                <label for="F">
+                        <input type="radio" name="rb_genero" id="F"  value="F">
+                        Femenino
+                </label>
+                <br /> <br />
+                <label for="asunto">Asunto:</label>
+                <input type="text" name="txt_asunto" id="asunto">
+                <br /> <br />
+                <label for="comentario">Comentario:</label>
+                <br />
+                <textarea name="txa_comentario" id="comentario" cols="50" rows="5"></textarea>
+                <br /> <br />
+                <input type="button" id="enviar" value="Enviar" name="btn-enviar" class="cambio">
+                <input type="button" id="limpiar" value="Limpiar" name="btn-limpiar" class="cambio">              
+
+            </fieldset>
+            
+        </form>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

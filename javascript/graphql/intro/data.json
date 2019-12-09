@@ -1,0 +1,28 @@
+{
+    "courses":[
+        {
+            "id": 1,
+            "title": "Nodejs course",
+            "author": "Jhon Carter",
+            "description": "lorem ipsum",
+            "topic" : "Javascript",
+            "url" : "https://nodejs.org/es/"
+        },
+        {
+            "id": 2,
+            "title": "Ruby On Rails course",
+            "author": "Louis Adam",
+            "description": "lorem ipsum",
+            "topic" : "Ruby",
+            "url" : "http://rubyonrails.org.es/"
+        },
+        {
+            "id": 3,
+            "title": "Python course",
+            "author": "Zack Rider",
+            "description": "lorem ipsum",
+            "topic" : "Python",
+            "url" : "https://www.python.org/"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "vue-firebase-realtime",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "firebase": "^6.2.0",
+    "jquery": "^3.4.1",
+    "toastr": "^2.1.4",
+    "uninstall": "0.0.0",
+    "vue": "^2.6.10",
+    "vue-toastr-2": "0.0.10",
+    "vuefire": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

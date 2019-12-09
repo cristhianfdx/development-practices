@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON</title>
+</head>
+<body>
+
+    <ul id="personas"></ul>
+
+
+    <script>
+
+        /*var personas = [
+            {nombre : "Carlos", nickname : "CFD"},
+            {nombre : "Alex", nickname :"al89"},
+            {nombre : "Fabio", nickname : "FB"},
+            {nombre : "Camilo", nickname :"ka89"}
+        ];
+
+        var salida = "";
+
+        for (let i = 0; i < personas.length; i++) {
+            salida += "<li>"+ ` nombre : ${personas[i].nombre};  nickname : ${personas[i].nickname}`+"</li>";
+            
+        }
+
+        document.getElementById("personas").innerHTML = salida;*/
+
+       /* var persona = {
+            nombre : "Cristhian",
+            apellido : "Forero",
+            edad : 29,
+            nickname : "crash",
+            saluda :function(){
+                return "Hola soy Cristhian";
+            }
+        };*/
+        
+        //console.log(persona);
+
+        /*var personas = [
+            {nombre : "Carlos", nickname : "CFD"},
+            {nombre : "Alex", nickname :"al89"},
+            {nombre : "Fabio", nickname : "FB"},
+            {nombre : "Camilo", nickname :"ka89"}
+        ];
+
+        for(var i =0; i<personas.length; i++){
+            console.log(personas[i]);
+        }*/
+
+        /*var cabeceras = new Headers();
+
+        var parametros ={
+            method: "GET",
+            headers : cabeceras
+
+        };*/
+
+        fetch("personas.json")
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(objJson){
+            var personas= objJson.personas;
+            
+            var salida = "";
+
+            for (let i = 0; i < personas.length; i++) {
+                salida += "<li>"+ ` nombre : ${personas[i].nombre};  nickname : ${personas[i].nickname}`+"</li>";
+            
+            }
+            
+            document.getElementById("personas").innerHTML = salida;
+        });
+
+      
+    </script>
+</body>
+</html>

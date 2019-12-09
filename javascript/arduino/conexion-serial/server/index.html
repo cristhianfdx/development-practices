@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arduino</title>
+</head>
+
+<body>
+    <h1>Arduino</h1>
+
+    <canvas id="myCanvas">
+
+    </canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+
+        const socket = io();
+        
+        let ctx = document.getElementById('myCanvas').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['Serial'],
+                datasets: [{
+                    label: 'Serial',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: []
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+
+        let counter = 0;
+
+        socket.on('arduino:data', function (data) {
+            chart.data.labels.push(counter);
+            chart.data.datasets.forEach(dataset => {
+                dataset.data.push(data.value);
+            });
+            counter++;
+            chart.update();
+        });
+    </script>
+</body>
+
+</html>

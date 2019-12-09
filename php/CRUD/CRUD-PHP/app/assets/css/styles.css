@@ -1,0 +1,33 @@
+@import url("normalize.css");
+
+header img{width: 320px;}
+
+body, html{
+    background: #eeeeee;
+    font-family: Helvetica, Arial;
+    font-size: 16px;
+    text-align: center;
+}
+
+header{padding-top: 20px;}
+
+section{margin-top: 20px}
+
+#contenido{
+    display: inline-block;
+    vertical-align: top;
+    background: white; 
+    width: 80%;
+}
+
+ #contenido, .tabla td, .tabla th {padding: 1em;}
+
+.tabla img{max-width: 120px;}
+
+.tabla th{background: #292623; color: #eee;}
+
+.tabla tr:nth-child(odd){background: #b38d80;}
+
+.tabla tr:nth-child(even){background: #58abd4;}
+
+.tabla td{ text-align: left;}

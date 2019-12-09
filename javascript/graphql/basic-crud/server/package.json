@@ -1,0 +1,27 @@
+{
+  "name": "app-react-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express-graphql": "^0.8.0",
+    "@types/graphql": "^14.2.2",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.4.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.6.2",
+    "morgan": "^1.9.1"
+  }
+}
