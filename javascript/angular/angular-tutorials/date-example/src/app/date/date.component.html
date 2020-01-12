@@ -1,0 +1,28 @@
+<div>
+
+    <h1>Dates Example</h1>
+
+    <form [formGroup]="form" (submit)="submit($event)">
+        <div>
+            <label for="year">Año:</label>&nbsp;
+            <select formControlName="year" id="year" (change)="yearOptionChange($event)">
+                <option [ngValue]="null" disabled>Seleccione año</option>
+                <option *ngFor="let year of years" [value]="year">{{year}}</option>
+            </select>
+        </div>
+        <br>
+        <div *ngIf="isYearSelected">
+            <label for="month">Mes:</label>&nbsp;
+            <select formControlName="month" id="month">
+                <option [ngValue]="null" disabled>Seleccione mes</option>
+                <option *ngFor="let item of months" [value]="item.value">
+                    {{item.label}}
+                </option>
+            </select>
+        </div>
+
+        <br>
+        <button type="submit" [disabled]="!form.valid">Enviar</button>
+    </form>
+
+</div>
