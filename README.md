@@ -1,2 +1,2 @@
-# projects-by-courses-dev
+# projects
 
