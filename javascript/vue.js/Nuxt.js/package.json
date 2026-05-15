@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.31.1",
     "nuxt": "^2.3.4",
     "nuxt-i18n": "^5.4.4"
   }
