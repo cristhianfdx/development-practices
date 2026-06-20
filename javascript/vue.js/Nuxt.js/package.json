@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
-    "nuxt": "^2.3.4",
+    "nuxt": "^3.21.7",
     "nuxt-i18n": "^5.4.4"
   }
 }
