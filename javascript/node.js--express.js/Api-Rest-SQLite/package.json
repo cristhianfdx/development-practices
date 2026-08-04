@@ -15,7 +15,7 @@
   "dependencies": {
     "consign": "^0.1.6",
     "express": "^4.16.4",
-    "sequelize": "^4.41.2",
+    "sequelize": "^6.37.8",
     "sqlite3": "^4.0.4"
   },
   "devDependencies": {
