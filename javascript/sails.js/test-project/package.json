@@ -5,7 +5,7 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
-    "sails": "^1.1.0",
+    "sails": "^1.5.18",
     "sails-hook-apianalytics": "^2.0.3",
     "sails-hook-organics": "^0.15.0",
     "sails-hook-orm": "^2.1.1",
@@ -19,7 +19,7 @@
     "@sailshq/htmlhint": "^0.9.16",
     "@sailshq/lesshint": "^4.6.6",
     "grunt": "1.0.1",
-    "sails-hook-grunt": "^3.1.0"
+    "sails-hook-grunt": "^5.0.0"
   },
   "scripts": {
     "start": "NODE_ENV=production node app.js",
